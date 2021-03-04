@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
 
 $white:#f9f7f7;
-$grey:#dbe2ef;
+$gray:#dbe2ef;
 $light-blue:#3f72af;
 $blue:#112d4e;
 
+.link{
+  color: $gray;
+  text-decoration: none;
+}
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -26,7 +30,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  background-color: $grey;
+  background-color: $gray;
   line-height: 1.79;
 }
 
@@ -78,6 +82,7 @@ b,
 strong {
   font-weight: inherit;
   font-weight: bolder;
+  color: $blue;
 }
 dfn {
   font-style: italic;
@@ -99,6 +104,7 @@ h1 {
   font-size: 2.25rem;
   line-height: 1.1;
   font-family: 'Montserrat', sans-serif;
+  color: $light-blue;
 }
 mark {
   background-color: #ff0;
@@ -107,6 +113,7 @@ mark {
 small {
   font-size: 80%;
   font-family: 'Roboto', sans-serif;
+  color: $blue;
 }
 sub,
 sup {
@@ -279,6 +286,7 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  color: $blue;
 }
 h3 {
   margin-left: 0;
@@ -296,6 +304,7 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
+  color: $light-blue;
 }
 h4 {
   margin-left: 0;
@@ -313,6 +322,7 @@ h4 {
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
+  color: $light-blue;
 }
 h5 {
   margin-left: 0;
@@ -330,6 +340,7 @@ h5 {
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
   line-height: 1.1;
+  color: $light-blue;
 }
 h6 {
   margin-left: 0;
@@ -347,6 +358,7 @@ h6 {
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
   line-height: 1.1;
+  color: $light-blue;
 }
 hgroup {
   margin-left: 0;

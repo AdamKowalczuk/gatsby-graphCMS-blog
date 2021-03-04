@@ -1,5 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
+import "../styles/header.scss"
+import "../styles/layout.scss"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
@@ -27,6 +29,28 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <div className="menu">
+        <h3>
+          <Link className="link" to="/historie">
+            Historie
+          </Link>
+        </h3>
+        <h3>
+          <Link className="link" to="/cytaty">
+            Cytaty
+          </Link>
+        </h3>
+        <h3>
+          <Link className="link" to="/ksiazki">
+            Książki
+          </Link>
+        </h3>
+        <h3>
+          <Link className="link" to="/aplikacje">
+            Aplikacje
+          </Link>
+        </h3>
+      </div>
     </div>
   </header>
 )

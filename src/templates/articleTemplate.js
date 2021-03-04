@@ -7,7 +7,7 @@ import "../styles/articleTemplate.scss"
 const ArticleTemplate = ({ pageContext: { data } }) => (
   <Layout>
     <SEO title={data.title} />
-    <Link to="/">Go back</Link>
+    <Link to="/">Wróć</Link>
     <h1>{data.title}</h1>
     <h2>{data.author}</h2>
     <p>{data.description}</p>
