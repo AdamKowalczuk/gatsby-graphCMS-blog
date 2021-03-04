@@ -9,7 +9,7 @@ const IndexPage = ({
   },
 }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Strona główna" />
     {edges.map(page => (
       <Link
         style={{ display: "block" }}
