@@ -2,3 +2,23 @@ $white:#f9f7f7;
 $grey:#dbe2ef;
 $light-blue:#3f72af;
 $blue:#112d4e;
+
+.article-container{
+    h1{
+        font-style: italic;
+    }
+    .article-box{
+        align-items:stretch;
+        min-height: 50vh;
+        padding: 10px;
+        p{
+
+        }
+        img{
+            float: right;
+            margin:20px 40px;
+            width: 300px;
+        }
+
+    }
+}

@@ -18,7 +18,7 @@ const Footer = () => (
       }}
     >
       <h3 style={{ color: "#f9f7f7", margin: "0" }}>
-        Copyright 2021 Adam Kowalczuk
+        © 2021 Adam Kowalczuk - Wszelkie prawa zastrzeżone
       </h3>
     </div>
   </footer>

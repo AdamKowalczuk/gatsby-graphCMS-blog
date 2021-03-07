@@ -1,0 +1,27 @@
+$white:#f9f7f7;
+$gray:#dbe2ef;
+$light-blue:#3f72af;
+$blue:#112d4e;
+
+.books-container{
+    display: flex;
+    flex-wrap: wrap;
+    h2{
+        font-style: italic;
+    }
+    .book{
+        width: 40%;
+        margin-bottom: 50px;
+        padding: 10px;
+        text-align: center;
+        background-color: $white;
+        border-radius: 30px;
+        margin: 20px 5%;
+    }
+    img{
+        width: 50%;
+        margin:0 25%;
+    }
+
+}
+

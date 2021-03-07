@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -21,12 +21,16 @@ const ApplicationPage = () => (
         }
       `}
       render={({ blog: { apps } }) => (
-        <div>
+        <div className="article-container">
           {apps.map(app => (
             <div key={app.name}>
               <h2>{app.name}</h2>
-              <img src={app.img.url} alt={app.name} />
-              <p>{app.description}</p>
+              <div className="article-box">
+                {/* <div className="img-container"> */}
+                <img src={app.img.url} alt={app.name} />
+                {/* </div> */}
+                <p>{app.description}</p>
+              </div>
             </div>
           ))}
         </div>

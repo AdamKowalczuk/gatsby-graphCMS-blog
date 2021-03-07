@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -10,23 +10,24 @@ const StoryPage = () => (
       query={graphql`
         query {
           blog {
-            articles {
+            histories {
               title
               description
-              author
-              slug
               image {
+                url
+              }
+              image2 {
                 url
               }
             }
           }
         }
       `}
-      render={({ blog: { articles } }) => (
+      render={({ blog: { histories } }) => (
         <div>
-          {articles.map(article => (
-            <div key={article.title}>
-              <h2>Historie</h2>
+          {histories.map(history => (
+            <div key={history.title}>
+              <h2>{history.title}</h2>
             </div>
           ))}
         </div>
