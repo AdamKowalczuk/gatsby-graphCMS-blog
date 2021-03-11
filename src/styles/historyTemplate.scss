@@ -1,0 +1,35 @@
+$white:#f9f7f7;
+$grey:#dbe2ef;
+$light-blue:#3f72af;
+$blue:#112d4e;
+
+.history-container{
+    h1{
+        font-style: italic;
+    }
+    .history-box{
+        align-items:stretch;
+        min-height: 50vh;
+        padding: 5px;
+        p{
+
+        }
+        img{
+            margin:10px 20px;
+            width: 500px !important;
+            height: auto !important;
+        }
+        .img1{
+            float: right;
+        }
+        .img2{
+            clear: both;
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+}
+

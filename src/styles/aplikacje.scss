@@ -1,0 +1,30 @@
+$black: #1d1f20;
+$blue: #83e4e2;
+$green: #a2ed56;
+$yellow: #fddc32;
+$white: #f9f7f7;
+
+.app-container{
+    .app-box{
+        h2{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        p{
+            padding: 10px;
+        }
+        .img-container{
+            img{
+                width: 25%;
+            }
+            img:nth-child(1){
+                margin-left: 20%;
+                margin-right: 5%;
+            }
+            img:nth-child(2){
+                margin-left: 5%;
+                margin-right: 20%;
+            }
+        }
+    }
+}

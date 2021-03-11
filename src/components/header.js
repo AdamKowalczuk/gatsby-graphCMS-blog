@@ -30,11 +30,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <div className="menu">
-        <h3>
+        {/* <h3>
           <Link className="link" to="/historie">
             Historie
           </Link>
-        </h3>
+        </h3> */}
         <h3>
           <Link className="link" to="/cytaty">
             Cytaty

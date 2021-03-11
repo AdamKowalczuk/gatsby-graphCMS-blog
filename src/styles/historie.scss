@@ -1,0 +1,23 @@
+$white:#f9f7f7;
+$gray:#dbe2ef;
+$light-blue:#3f72af;
+$blue:#112d4e;
+
+.history-container
+{
+    h2{
+        color: $light-blue;
+    }
+    img{
+        height: 200px;
+        margin:0;
+    }
+    button{
+        display: block;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    b{
+        color: red;
+    }
+}

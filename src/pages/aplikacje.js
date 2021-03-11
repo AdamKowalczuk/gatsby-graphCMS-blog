@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "../styles/aplikacje.scss"
 
 const ApplicationPage = () => (
   <Layout>
@@ -13,7 +14,10 @@ const ApplicationPage = () => (
             apps {
               name
               description
-              img {
+              image {
+                url
+              }
+              image2 {
                 url
               }
             }
@@ -21,16 +25,15 @@ const ApplicationPage = () => (
         }
       `}
       render={({ blog: { apps } }) => (
-        <div className="article-container">
+        <div className="app-container">
           {apps.map(app => (
-            <div key={app.name}>
+            <div className="app-box" key={app.name}>
               <h2>{app.name}</h2>
-              <div className="article-box">
-                {/* <div className="img-container"> */}
-                <img src={app.img.url} alt={app.name} />
-                {/* </div> */}
-                <p>{app.description}</p>
+              <div className="img-container">
+                <img src={app.image.url} alt={app.name} />
+                <img src={app.image2.url} alt={app.name} />
               </div>
+              <p>{app.description}</p>
             </div>
           ))}
         </div>
