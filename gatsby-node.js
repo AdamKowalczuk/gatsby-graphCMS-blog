@@ -1,5 +1,5 @@
 const path = require(`path`)
-
+console.log(path)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const articleTemplate = path.resolve(`src/templates/articleTemplate.js`)
@@ -25,7 +25,10 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `).then(res => {
+    if (res.errors) {
+      return Promise.reject(res.errors)
+    }
   const historiesQuery = await graphql(`
     {
       blog {

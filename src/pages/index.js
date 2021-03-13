@@ -15,7 +15,8 @@ const IndexPage = ({
     {/* {console.log(edges.page.node[0].component)}
     {console.log(edges.page.node[0].context.data.title)} */}
     {/* {console.log(edges.page[0].node[0])} */}
-    <h1>Page: {edges[0].node.path}</h1>
+    {/* <h1>Page: {edges[0].node.path}</h1> */}
+    {/* {console.log("All historyPagesQuery:", allHistoryPagesQuery)} */}
     {edges.map(page => (
       <>
         {/* {console.log(page.node.component)}
