@@ -16,14 +16,9 @@ const IndexPage = ({
     {console.log(edges.page.node[0].context.data.title)} */}
     {/* {console.log(edges.page[0].node[0])} */}
     {/* <h1>Page: {edges[0].node.path}</h1> */}
-    {/* {console.log("All historyPagesQuery:", allHistoryPagesQuery)} */}
+    {console.log("All historyPagesQuery:", allHistoryPagesQuery)}
     {edges.map(page => (
       <>
-        {/* {console.log(page.node.component)}
-        {console.log(page.node.context.data.title)}
-        {console.log(page)} */}
-
-        <h1>{page.node.component}</h1>
         <div className="history-container" key={page.node.context.data.title}>
           <h1>{page.node.context.data.title}</h1>
 
@@ -36,7 +31,6 @@ const IndexPage = ({
               Zobacz
             </Link>
           </button>
-          {page.node.path}
         </div>
       </>
     ))}
