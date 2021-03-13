@@ -24,7 +24,7 @@ const IndexPage = ({
               Zobacz
             </Link>
           </button>
-          {page.node.component}
+          {/* {page.node.component} */}
         </div>
       </>
     ))}
