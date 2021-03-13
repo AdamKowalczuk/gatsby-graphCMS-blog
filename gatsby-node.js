@@ -25,10 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `).then(res => {
-    if (res.errors) {
-      return Promise.reject(res.errors)
-    }
+  `)
   const historiesQuery = await graphql(`
     {
       blog {
