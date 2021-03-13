@@ -1,7 +1,6 @@
 const path = require(`path`)
-console.log(path)
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators
   const articleTemplate = path.resolve(`src/templates/articleTemplate.js`)
   const historyTemplate = path.resolve(`src/templates/historyTemplate.js`)
   const articlesQuery = await graphql(`
