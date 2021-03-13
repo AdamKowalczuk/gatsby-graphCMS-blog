@@ -13,9 +13,7 @@ const HistoryTemplate = ({ pageContext: { data } }) => (
       <h1>{data.title}</h1>
       <h2>{data.author}</h2>
       <div className="history-box">
-        {/* <div className="img-container"> */}
         <img className="img1" src={data.image.url} alt={data.title} />
-        {/* </div> */}
         <p>{data.description}</p>
         <img className="img2" src={data.image2.url} alt={data.title} />
       </div>

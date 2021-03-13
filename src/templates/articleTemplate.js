@@ -12,9 +12,7 @@ const ArticleTemplate = ({ pageContext: { data } }) => (
       <h1>{data.title}</h1>
       <h2>{data.author}</h2>
       <div className="article-box">
-        {/* <div className="img-container"> */}
         <img src={data.image.url} alt={data.title} />
-        {/* </div> */}
         <p>{data.description}</p>
       </div>
     </div>
