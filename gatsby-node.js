@@ -10,7 +10,6 @@ exports.createPages = async ({ graphql, actions }) => {
         articles: articlesConnection(first: 100) {
           edges {
             node {
-              id
               createdAt
               id
               slug
@@ -33,7 +32,6 @@ exports.createPages = async ({ graphql, actions }) => {
         histories: historiesConnection(first: 100) {
           edges {
             node {
-              id
               createdAt
               id
               slug
