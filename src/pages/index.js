@@ -12,19 +12,22 @@ const IndexPage = ({
   <Layout>
     <SEO title="Strona główna" />
     {edges.map(page => (
-      <div className="history-container" key={page.node.context.data.title}>
-        <h1>{page.node.context.data.title}</h1>
-        <img
-          src={page.node.context.data.image.url}
-          alt={page.node.context.data.title}
-        />
-        <button className="btn btn-blue">
-          <Link className="link" key={page.node.path} to={page.node.path}>
-            Zobacz
-          </Link>
-        </button>
-        {page.node.path}
-      </div>
+      <>
+        <h1>{page.node.component}</h1>
+        <div className="history-container" key={page.node.context.data.title}>
+          <h1>{page.node.context.data.title}</h1>
+          <img
+            src={page.node.context.data.image.url}
+            alt={page.node.context.data.title}
+          />
+          <button className="btn btn-blue">
+            <Link className="link" key={page.node.path} to={page.node.path}>
+              Zobacz
+            </Link>
+          </button>
+          {page.node.path}
+        </div>
+      </>
     ))}
   </Layout>
 )
