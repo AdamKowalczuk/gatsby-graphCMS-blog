@@ -16,6 +16,7 @@ const IndexPage = ({
         <h1>{page.node.component}</h1>
         <div className="history-container" key={page.node.context.data.title}>
           <h1>{page.node.context.data.title}</h1>
+
           <img
             src={page.node.context.data.image.url}
             alt={page.node.context.data.title}
@@ -27,6 +28,9 @@ const IndexPage = ({
           </button>
           {page.node.path}
         </div>
+        {console.log(page.node.component)}
+        {console.log(page.node.context.data.title)}
+        {console.log(page)}
       </>
     ))}
   </Layout>

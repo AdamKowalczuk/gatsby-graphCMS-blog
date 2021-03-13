@@ -22,15 +22,12 @@ const QuotePage = () => (
         <div className="quotes-list">
           <ol className="gradient-list">
             {quotes.map(quote => (
-              // <div key={quote.author}>
               <li key={quote.author}>
                 <h2>{quote.author}</h2>
-
                 <blockquote>
                   <q>{quote.description}</q>
                 </blockquote>
               </li>
-              // {/* </div> */}
             ))}
           </ol>
         </div>
