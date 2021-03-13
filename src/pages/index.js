@@ -11,12 +11,13 @@ const IndexPage = ({
 }) => (
   <Layout>
     <SEO title="Strona główna" />
+    <h1>Hej</h1>
     {edges.map(page => (
       <>
         {console.log(page.node.component)}
         {console.log(page.node.context.data.title)}
         {console.log(page)}
-        <h1>Hej</h1>
+
         <h1>{page.node.component}</h1>
         <div className="history-container" key={page.node.context.data.title}>
           <h1>{page.node.context.data.title}</h1>
