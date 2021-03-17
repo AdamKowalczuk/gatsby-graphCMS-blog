@@ -86,3 +86,11 @@ ol.gradient-list {
     }
   }
 }
+
+@media only screen and (max-width: 600px){
+  .quotes-list {
+    blockquote{
+      margin: 0;
+    }
+  }
+}

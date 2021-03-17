@@ -4,6 +4,13 @@ import "../styles/layout.scss"
 import "../styles/header.scss"
 import { Link } from "gatsby"
 
+function openNav() {
+  document.getElementById("myNav").style.height = "100%"
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%"
+}
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -29,12 +36,35 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <div className="menu">
-        {/* <h3>
-          <Link className="link" to="/historie">
-            Historie
-          </Link>
-        </h3> */}
+      <span
+        onClick={() => openNav()}
+        style={{ fontSize: "30px", cursor: "pointer", color: "#f9f7f7" }}
+      >
+        &#9776;{" "}
+      </span>
+      <div id="myNav" className="overlay">
+        <a className="closebtn" onClick={() => closeNav()}>
+          &times;
+        </a>
+        <div className="overlay-content">
+          <h3>
+            <Link className="link" to="/cytaty">
+              Cytaty
+            </Link>
+          </h3>
+          <h3>
+            <Link className="link" to="/ksiazki">
+              Książki
+            </Link>
+          </h3>
+          <h3>
+            <Link className="link" to="/aplikacje">
+              Aplikacje
+            </Link>
+          </h3>
+        </div>
+      </div>
+      {/* <div className="menu">
         <h3>
           <Link className="link" to="/cytaty">
             Cytaty
@@ -50,7 +80,7 @@ const Header = ({ siteTitle }) => (
             Aplikacje
           </Link>
         </h3>
-      </div>
+      </div> */}
     </div>
   </header>
 )

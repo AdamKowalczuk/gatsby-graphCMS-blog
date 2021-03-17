@@ -24,4 +24,11 @@ $blue:#112d4e;
     }
 
 }
+@media only screen and (max-width: 600px){
+    .books-container{
+        .book{
+            width: 90%;
+        }
+    }
+}
 

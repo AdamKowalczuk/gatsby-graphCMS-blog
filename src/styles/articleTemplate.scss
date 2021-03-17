@@ -22,3 +22,26 @@ $blue:#112d4e;
 
     }
 }
+
+
+@media only screen and (max-width: 600px){
+    .article-container{
+
+        .article-box{
+            align-items:center;
+            padding: 0px;
+            p{
+
+            }
+            img{
+                clear: both;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 10px;
+                width: 70%;
+            }
+
+        }
+    }
+
+}

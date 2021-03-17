@@ -28,3 +28,30 @@ $white: #f9f7f7;
         }
     }
 }
+@media only screen and (max-width: 600px){
+    .app-container{
+        .app-box{
+            h2{
+                margin-bottom: 20px;
+            }
+            p{
+                padding: 10px;
+            }
+            .img-container{
+                img{
+                    width: 50%;
+                    padding: 5px;
+                    margin-bottom: 0;
+                }
+                img:nth-child(1){
+                    margin-left: 0%;
+                    margin-right: 0%;
+                }
+                img:nth-child(2){
+                    margin-left: 0%;
+                    margin-right: 0%;
+                }
+            }
+        }
+    }
+}
