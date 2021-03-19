@@ -15,6 +15,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `blog-motywacyjny`,
+      },
+    },
+    {
       resolve: "gatsby-source-graphql",
       options: {
         typeName: "BLOG",

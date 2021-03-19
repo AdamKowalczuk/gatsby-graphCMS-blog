@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/historie.scss"
+import { Disqus } from 'gatsby-plugin-disqus';
 
 const IndexPage = ({
   data: {
@@ -34,7 +35,18 @@ const IndexPage = ({
         </div>
       </>
     ))}
+    <Disqus
+        config={
+            /* Replace PAGE_URL with your post's canonical URL variable */
+            url: 'https://motivational-blog.netlify.app/',
+            /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+            identifier: {page.node.context.data.title},
+            /* Replace PAGE_TITLE with the title of the page */
+            title: {page.node.context.data.title},
+        }
+    />
   </Layout>
+
 )
 
 export const allHistoryPagesQuery = graphql`
