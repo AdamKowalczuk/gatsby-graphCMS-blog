@@ -3,8 +3,6 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/historie.scss"
-import { Disqus } from 'gatsby-plugin-disqus';
-
 const IndexPage = ({
   data: {
     allSitePage: { edges },
@@ -14,10 +12,9 @@ const IndexPage = ({
     <SEO title="Strona główna" />
     <h1>Hej</h1>
 
-    {console.log("All historyPagesQuery:", allHistoryPagesQuery)}
-    {/* {console.log("historiesQuery:", historiesQuery)} */}
-    <h3>{edges[0].node.context.data.title}</h3>
 
+
+    <h3>{edges[0].node.context.data.title}</h3>
     {edges.map(page => (
       <>
         <div className="history-container" key={page.node.context.data.title}>
@@ -35,18 +32,7 @@ const IndexPage = ({
         </div>
       </>
     ))}
-    <Disqus
-        config={
-            /* Replace PAGE_URL with your post's canonical URL variable */
-            url: 'https://motivational-blog.netlify.app/',
-            /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
-            identifier: {page.node.context.data.title},
-            /* Replace PAGE_TITLE with the title of the page */
-            title: {page.node.context.data.title},
-        }
-    />
   </Layout>
-
 )
 
 export const allHistoryPagesQuery = graphql`
