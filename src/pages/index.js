@@ -35,7 +35,7 @@ const IndexPage = ({
 
 export const allHistoryPagesQuery = graphql`
   {
-    allSitePage(filter: { component: {} }) {
+    allSitePage {
       edges {
         node {
           path
