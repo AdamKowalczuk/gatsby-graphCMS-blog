@@ -12,8 +12,6 @@ const IndexPage = ({
     <SEO title="Strona główna" />
     <h1>Hej</h1>
 
-
-
     <h3>{edges[0].node.context.data.title}</h3>
     {edges.map(page => (
       <>
@@ -37,13 +35,7 @@ const IndexPage = ({
 
 export const allHistoryPagesQuery = graphql`
   {
-    allSitePage(
-      filter: {
-        component: {
-          eq: "C:/Users/Adam/Desktop/Projekty/motivational-blog/src/templates/historyTemplate.js"
-        }
-      }
-    ) {
+    allSitePage(filter: { component: {} }) {
       edges {
         node {
           path
